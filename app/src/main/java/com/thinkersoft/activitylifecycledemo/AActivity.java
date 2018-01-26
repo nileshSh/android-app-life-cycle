@@ -6,6 +6,7 @@ import android.os.AsyncTask;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -19,9 +20,27 @@ import com.thinkersoft.activitylifecycledemo.services.MySongService;
 public class AActivity extends AppCompatActivity {
     private String TAG="A Activity :-";
     private Button mButton;
-    ListView mlist;
+   // RecyclerView mlist;
     // data source
     String[] values = new String[] { "Android List View",
+            "Adapter implementation",
+            "Simple List View In Android",
+            "Create List View Android",
+            "Android Example",
+            "List View Source Code",
+            "List View Array Adapter",
+            "Adapter implementation",
+            "Simple List View In Android",
+            "Create List View Android",
+            "Android Example",
+            "List View Source Code",
+            "List View Array Adapter",
+            "Adapter implementation",
+            "Simple List View In Android",
+            "Create List View Android",
+            "Android Example",
+            "List View Source Code",
+            "List View Array Adapter",
             "Adapter implementation",
             "Simple List View In Android",
             "Create List View Android",
@@ -34,12 +53,22 @@ public class AActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_a);
+        Button b= (Button) findViewById(R.id.button);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent bActivity =new Intent(AActivity.this,BActivity.class);
+                startActivity(bActivity);
+            }
+        });
 
-        ArrayAdapter adapter=new ArrayAdapter<String>(this,R.layout.a_activity_list_item,R.id.a_activity_list_item_textview,values);
 
-        mlist= (ListView) findViewById(R.id.listview);
+        //ArrayAdapter adapter=new ArrayAdapter<String>(this,R.layout.a_activity_list_item,R.id.a_activity_list_item_textview,values);
 
-        mlist.setAdapter(adapter);
+      //  mlist= (RecyclerView) findViewById(R.id.listview);
+
+
+        //mlist.setAdapter(adapter);
 
 
     }

@@ -26,7 +26,7 @@ public class CActivity extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                Intent intent=new Intent(CActivity.this ,DActivity.class);
+                Intent intent=new Intent(CActivity.this ,BActivity.class);
 
                 startActivity(intent);
             }

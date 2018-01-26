@@ -10,7 +10,6 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".AActivity"
-            android:configChanges="orientation|screenSize"
             android:launchMode="standard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,14 +19,13 @@
         </activity>
         <activity
             android:name=".BActivity"
-            android:launchMode="standard" />
+            android:launchMode="singleTop" />
         <activity
             android:name=".CActivity"
-            android:launchMode="singleInstance" />
+            android:launchMode="standard" />
         <activity
             android:name=".DActivity"
             android:launchMode="standard" />
-
         <service
             android:name=".services.MySongService"
           ></service>

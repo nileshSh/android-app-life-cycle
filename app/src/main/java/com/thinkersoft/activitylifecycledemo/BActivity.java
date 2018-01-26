@@ -15,14 +15,14 @@ public class BActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_b);
         Log.i("lifeCycle",TAG + "onCreate");
-        String data=getIntent().getStringExtra("ABC");
+      //  String data=getIntent().getStringExtra("ABC");
       /*  if(savedInstanceState==null) {
 
             Log.i("lifeCycle",TAG + "onCreate == null ");
         }else {
             Log.i("lifeCycle", TAG + "onCreate != null");
         }*/
-        Log.i("lifeCycle",data);
+       // Log.i("lifeCycle",data);
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

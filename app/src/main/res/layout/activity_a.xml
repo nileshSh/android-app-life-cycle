@@ -8,15 +8,15 @@
     android:background="@android:color/holo_blue_bright">
     <!-- A RecyclerView with some commonly used attributes -->
 
-    <ListView
+   <!-- <android.support.v7.widget.RecyclerView
         android:id="@+id/listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-     />
+     />-->
 
 
 
-       <!-- <Button
+       <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
             android:layout_below="@+id/button"
             android:padding="20dp"
             android:textSize="25sp"
-            android:textAllCaps="false" />-->
+            android:textAllCaps="false" />
 
 
 
